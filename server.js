@@ -22,5 +22,3 @@ mongoose.connect(
 app.use(bodyParser.urlencoded({ extended: true }), bodyParser.json(), routes);
 
 app.listen(port, () => console.log("servidor na porta: " + port));
-
-app.get("/", (req, res) => res.json({ ola: "Mundo" }));
